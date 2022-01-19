@@ -26,7 +26,7 @@ final class Provider extends AbstractComponentProvider
      */
     public function isAvailable(): bool
     {
-        return class_exists(\Illuminate\View\ViewServiceProvider::class::class);
+        return class_exists(\Illuminate\View\ViewServiceProvider::class);
     }
 
     /**
@@ -34,6 +34,6 @@ final class Provider extends AbstractComponentProvider
      */
     public function register(): void
     {
-        $this->app->register(\Illuminate\View\ViewServiceProvider::class::class);
+        $this->app->register(\Illuminate\View\ViewServiceProvider::class);
     }
 }
