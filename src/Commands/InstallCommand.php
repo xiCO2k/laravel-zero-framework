@@ -38,6 +38,7 @@ final class InstallCommand extends Command
         'database' => Components\Database\Installer::class,
         'dotenv' => Components\Dotenv\Installer::class,
         'http' => Components\Http\Installer::class,
+        'view' => Components\View\Installer::class,
         'log' => Components\Log\Installer::class,
         'logo' => Components\Logo\Installer::class,
         'menu' => Components\Menu\Installer::class,
